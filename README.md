@@ -21,7 +21,7 @@ A mobile party game built with Flutter where players try to identify the imposte
 
 The app follows a Provider-based state management pattern with a clean folder structure:
 
-### 📁 Folder Structure
+###  Folder Structure
 
 | File | Purpose |
 |---|---|
@@ -35,12 +35,12 @@ The app follows a Provider-based state management pattern with a clean folder st
 | `lib/screens/results_screen.dart` | Results and scoreboard screen |
 | `lib/data/word_packs.dart` | All word categories and word lists |
 
-### ⚙️ State Management
+###  State Management
 - Uses **Provider** with `ChangeNotifier` to manage game state across all screens
 - `GameState` holds the player list, current word pack, imposter index, and score data
 - `shared_preferences` saves player names and scores locally on the device
 
-### 🔄 Screen Flow
+###  Screen Flow
 
 | Step | Screen | Description |
 |---|---|---|
