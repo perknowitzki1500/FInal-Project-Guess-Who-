@@ -1,5 +1,6 @@
 # FInal-Project-Guess-Who-
 // AI (CLaude used for organiztion wtith code/ files along with some conteents such as pubspec yaml file, Word packs, UI construction, discussion,apk constucttion  screen and voting screen. 
+
 // Prompts 
  What dependecies do I need for my project? 
  Conttruct a special UI for my Impostter game app while keeping the contents the same. Use a color theme that uses Pink and Teal colors that compliment each other and add emojis when making accouncments in the app. 
