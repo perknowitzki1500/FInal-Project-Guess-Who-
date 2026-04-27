@@ -1,5 +1,5 @@
 # FInal-Project-Guess-Who-
-// AI (CLaude used for organiztion wtith code/ files along with some conteents such as pubspec yaml file, Word packs, UI construction, discussion,apk constucttion  screen and voting screen. 
+// AI (CLaude used for organiztion wtith code/ files along with some contents such as pubspec yaml file, Word packs, UI construction, discussion,apk constuction,screen and voting screen. 
 
 // Prompts 
  What dependecies do I need for my project? 
