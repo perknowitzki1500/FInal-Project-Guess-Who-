@@ -145,6 +145,6 @@ The latest release APK can be downloaded directly from this repository:
 ##  Author
 
 **Scoot Taylor**
-COSC-355 — Mobile App Development
+COSC-355 — Mobile Computing
 
 
