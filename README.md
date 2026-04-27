@@ -19,30 +19,39 @@ A mobile party game built with Flutter where players try to identify the imposte
 
 ##  Architecture Overview
 
-The app follows a simple Provider-based state management pattern with a clean folder structure:
-lib/
-├── main.dart                  # App entry point, theme setup, Provider initialization
-├── models/
-│   ├── player.dart            # Player data model with JSON serialization
-│   └── game_state.dart        # Core game logic, role assignment, score tracking
-├── screens/
-│   ├── home_screen.dart       # Player name entry and category selection
-│   ├── reveal_screen.dart     # Pass-the-phone word reveal screen
-│   ├── discussion_screen.dart # Countdown timer discussion screen
-│   ├── voting_screen.dart     # Secret voting screen
-│   └── results_screen.dart    # Results and scoreboard screen
-└── data/
-└── word_packs.dart        # All word categories and word lists
+The app follows a Provider-based state management pattern with a clean folder structure:
 
-### State Management
-- Uses **Provider** with 'ChangeNotifier' to manage game state across all screens 'change' 
-- `GameState' holds the player list, current word pack, imposter index, and score data
-- `shared_preferences' saves player names and scores locally on the device
+### 📁 Folder Structure
 
-### Screen Flow
----
+| File | Purpose |
+|---|---|
+| `lib/main.dart` | App entry point, theme setup, Provider initialization |
+| `lib/models/player.dart` | Player data model with JSON serialization |
+| `lib/models/game_state.dart` | Core game logic, role assignment, score tracking |
+| `lib/screens/home_screen.dart` | Player name entry and category selection |
+| `lib/screens/reveal_screen.dart` | Pass-the-phone word reveal screen |
+| `lib/screens/discussion_screen.dart` | Countdown timer discussion screen |
+| `lib/screens/voting_screen.dart` | Secret voting screen |
+| `lib/screens/results_screen.dart` | Results and scoreboard screen |
+| `lib/data/word_packs.dart` | All word categories and word lists |
 
-## 🚀 Flutter Build & Run Instructions
+### ⚙️ State Management
+- Uses **Provider** with `ChangeNotifier` to manage game state across all screens
+- `GameState` holds the player list, current word pack, imposter index, and score data
+- `shared_preferences` saves player names and scores locally on the device
+
+### 🔄 Screen Flow
+
+| Step | Screen | Description |
+|---|---|---|
+| 1 | Home Screen | Add players and pick a word category |
+| 2 | Reveal Screen | Each player privately sees their word |
+| 3 | Discussion Screen | Group discusses with a countdown timer |
+| 4 | Voting Screen | Each player secretly votes for the imposter |
+| 5 | Results Screen | Reveals the imposter and updates scores |
+| 6 | Home Screen | Play again with updated scores |
+
+##  Flutter Build & Run Instructions
 
 ### Prerequisites
 - Flutter SDK installed (3.0.0 or higher)
